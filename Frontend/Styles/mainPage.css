@@ -1,0 +1,81 @@
+body
+{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    margin: 0;
+    overscroll-behavior-y: contain;
+    background-color: lightgray;
+}
+
+.canvasDiv
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.canvas
+{
+    position: relative;
+}
+
+.logout-button
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.pixel-info
+{
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.modifier-info
+{
+    font-family: "Rubik", sans-serif;
+}
+
+.pixel-modifier
+{
+    font-family: "Rubik", sans-serif;
+}
+
+.change-pixel
+{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.button
+{
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: 5px;
+    font-family: "Rubik", sans-serif;
+}

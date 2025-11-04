@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ben Gurion Canvas</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../Scripts/mainPage.js"></script>
+        <script src="../Scripts/global.js"></script>
+        <script src="https://apis.google.com/js/platform.js?onload=initGoogle" async defer></script>
+        <meta name="google-signin-client_id" content="81968426645-r6amsniclac2dfggd67ki0949hun8k84.apps.googleusercontent.com">
+        <link rel="stylesheet" type="text/css" href="../Styles/mainPage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Rubik&display=swap" rel="stylesheet">
+    </head>
+    <body onmouseup="mouseUp(event)">
+        <img src="../Images/logout.png" class="logout-button" onclick="logout()" width="30" height="30">
+        <div class="canvasDiv" id="canvasDiv">
+            <canvas id="canvas" class="canvas" onclick="canvasClick(event)" onmousedown="canvasMouseDown(event)" onmousemove="canvasMouseMove(event)" style="transform: translate(0px, 0px);"></canvas>
+        </div>
+        <div class="pixel-info" id="pixel-info" style="display: none;">
+            <span class="pixel-coords" id="pixel-coords"></span> <br />
+            <span class="modifier-info" id="modifier-info">שונה לאחרונה על ידי </span>
+            <span class="pixel-modifier" id="pixel-modifier"></span>
+        </div>
+        <div class="change-pixel" id="change-pixel" style="display: none;">
+            <input type="color" class="pixel-color" id="pixel-color" disabled>
+            <button class="button" id="change-color-button" onclick="changeColor()">שנה</button>
+            <button class="button" id="save-button" onclick="saveColor()">שמור</button>
+            <span id="timer" class="timer"></span>
+        </div>
+    </body>
+</html>
